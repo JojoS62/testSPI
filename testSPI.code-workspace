@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\..\\custom_targets"
+		},
+		{
+			"path": "..\\..\\mbed-os"
+		}
+	],
+	"settings": {}
+}

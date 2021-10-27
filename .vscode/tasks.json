@@ -1,0 +1,266 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "presentation": {
+        "clear": false,
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "close": false
+    },
+    "tasks": [
+        {
+            "label": "configure NUCLEO_F103RB",
+            "command": "mbed-tools",
+            "args": [
+                "configure",
+                "-m",
+                "NUCLEO_F103RB",
+                "-t",
+                "GCC_ARM",
+                "-b",
+                "release"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "build NUCLEO_F103RB",
+            "type": "process",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "cmake_build/NUCLEO_F103RB/release/GCC_ARM"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "configure BLUEPILL_F103C8",
+            "command": "mbed-tools",
+            "args": [
+                "configure",
+                "-m",
+                "BLUEPILL_F103C8",
+                "-t",
+                "GCC_ARM"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "build BLUEPILL_F103C8",
+            "type": "process",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "cmake_build/BLUEPILL_F103C8/release/GCC_ARM"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "compile NUCLEO_F091RC",
+            "command": "mbed-tools",
+            "args": [
+                "compile",
+                "-m",
+                "NUCLEO_F091RC",
+                "-t",
+                "GCC_ARM",
+                "-b",
+                "release"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "compile NUCLEO_F103RB",
+            "command": "mbed-tools",
+            "args": [
+                "compile",
+                "-m",
+                "NUCLEO_F103RB",
+                "-t",
+                "GCC_ARM",
+                "-b",
+                "release"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "compile BLUEPILL_F103C8",
+            "command": "mbed-tools",
+            "args": [
+                "compile",
+                "-m",
+                "BLUEPILL_F103C8",
+                "-t",
+                "GCC_ARM",
+                "--custom-targets-json",
+                "stm32customtargets/custom_targets.json",
+                "-b",
+                "release"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "compile STM32F407VE_BLACK",
+            "command": "mbed-tools",
+            "args": [
+                "compile",
+                "-m",
+                "STM32F407VE_BLACK",
+                "-t",
+                "GCC_ARM",
+                "--mbed-os-path",
+                "../../mbed-os",
+                "--custom-targets-json",
+                "../../custom_targets/custom_targets.json",
+                "-b",
+                "release"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build STM32F407VE_BLACK",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "cmake_build/STM32F407VE_BLACK/release/GCC_ARM"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build clean STM32F407VE_BLACK",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "cmake_build/STM32F407VE_BLACK/release/GCC_ARM",
+                "--clean-first"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "compile WEACT_F411CE",
+            "command": "mbed-tools",
+            "args": [
+                "compile",
+                "-m",
+                "WEACT_F411CE",
+                "-t",
+                "GCC_ARM",
+                "--mbed-os-path",
+                "../../mbed-os",
+                "--custom-targets-json",
+                "../../custom_targets/custom_targets.json",
+                "-b",
+                "release"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build WEACT_F411CE",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "cmake_build/WEACT_F411CE/release/GCC_ARM"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build clean WEACT_F411CE",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "cmake_build/WEACT_F411CE/release/GCC_ARM",
+                "--clean-first"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "compile DEVEBOX_H743VI",
+            "command": "mbed-tools",
+            "args": [
+                "compile",
+                "-m",
+                "DEVEBOX_H743VI",
+                "-t",
+                "GCC_ARM",
+                "--mbed-os-path",
+                "../../mbed-os",
+                "--custom-targets-json",
+                "../../custom_targets/custom_targets.json",
+                "-b",
+                "release"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build DEVEBOX_H743VI",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "cmake_build/DEVEBOX_H743VI/release/GCC_ARM"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build clean DEVEBOX_H743VI",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "cmake_build/DEVEBOX_H743VI/release/GCC_ARM",
+                "--clean-first"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}

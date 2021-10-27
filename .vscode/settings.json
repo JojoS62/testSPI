@@ -1,0 +1,15 @@
+{
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "cmake.buildDirectory": "${workspaceFolder}/cmake_build/WEACT_F411CE/release/GCC_ARM",
+    "cmake.configureOnOpen": false,
+	"clangd.checkUpdates": true,
+	"clangd.arguments": [
+		"--query-driver=C:/Program Files/LLVM/bin/clang.exe",
+		"--log=verbose",
+		"--completion-style=detailed",
+		"--clang-tidy",
+		"--header-insertion=never",
+		"--suggest-missing-includes"
+	],
+	"cmake.configureOnEdit": false,
+}

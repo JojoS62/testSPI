@@ -1,0 +1,13 @@
+{
+    "target_overrides": {
+        "*": {
+            "platform.stdio-baud-rate": 115200
+        },
+        "WEACT_F411CE": {
+            "device_has_remove": ["SLEEP"]
+        },
+        "DEVEBOX_H743VI": {
+            "device_has_remove": ["SLEEP"]
+        }
+    }
+}

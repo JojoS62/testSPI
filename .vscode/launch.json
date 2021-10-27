@@ -1,0 +1,31 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "cmake_build/WEACT_F411CE/release/GCC_ARM/${workspaceFolderBasename}.elf",
+            "name": "release stlink F411",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stlink",
+            "runToMain": true,
+            "serialNumber": "0053003E3438510234313939",
+            "breakAfterReset": false,
+            "v1": false
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "cmake_build/DEVEBOX_H743VI/release/GCC_ARM/${workspaceFolderBasename}.elf",
+            "name": "release stlink H743",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stlink",
+            "runToMain": true,
+            "serialNumber": "004900313137510B33333639",
+            "breakAfterReset": false,
+            "serverArgs": [""],
+            "device": "STM32H743XI",
+            "v1": false
+        }
+     ]
+}
