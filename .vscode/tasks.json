@@ -227,7 +227,7 @@
                 "--custom-targets-json",
                 "../../custom_targets/custom_targets.json",
                 "-b",
-                "release"
+                "debug"
             ],
             "problemMatcher": [
                 "$gcc"
@@ -239,7 +239,7 @@
             "command": "cmake",
             "args": [
                 "--build",
-                "cmake_build/DEVEBOX_H743VI/release/GCC_ARM"
+                "cmake_build/DEVEBOX_H743VI/debug/GCC_ARM"
             ],
             "problemMatcher": [
                 "$gcc"
@@ -255,6 +255,52 @@
             "args": [
                 "--build",
                 "cmake_build/DEVEBOX_H743VI/release/GCC_ARM",
+                "--clean-first"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "compile DEVEBOX_F407VG",
+            "command": "mbed-tools",
+            "args": [
+                "compile",
+                "-m",
+                "DEVEBOX_F407VG",
+                "-t",
+                "GCC_ARM",
+                "--mbed-os-path",
+                "../../mbed-os",
+                "--custom-targets-json",
+                "../../custom_targets/custom_targets.json",
+                "-b",
+                "debug"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build DEVEBOX_F407VG",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "cmake_build/DEVEBOX_F407VG/debug/GCC_ARM"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "label": "build clean DEVEBOX_F407VG",
+            "command": "cmake",
+            "args": [
+                "--build",
+                "cmake_build/DEVEBOX_F407VG/debug/GCC_ARM",
                 "--clean-first"
             ],
             "problemMatcher": [

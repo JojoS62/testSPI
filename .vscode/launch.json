@@ -21,10 +21,48 @@
             "type": "cortex-debug",
             "servertype": "stlink",
             "runToMain": true,
-            "serialNumber": "004900313137510B33333639",
             "breakAfterReset": false,
             "serverArgs": [""],
             "device": "STM32H743XI",
+            "v1": false
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "cmake_build/DEVEBOX_H743VI/debug/GCC_ARM/${workspaceFolderBasename}.elf",
+            "name": "debug stlink H743",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stlink",
+            "runToMain": true,
+            "breakAfterReset": false,
+            "serverArgs": [""],
+            "device": "STM32H743XI",
+            "v1": false
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "cmake_build/DEVEBOX_F407VG/release/GCC_ARM/${workspaceFolderBasename}.elf",
+            "name": "release stlink F407VG",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stlink",
+            "runToMain": true,
+            "serialNumber": "004900313137510B33333639",
+            "breakAfterReset": false,
+            "serverArgs": [""],
+            "v1": false
+        },
+        {
+            "cwd": "${workspaceRoot}",
+            "executable": "cmake_build/DEVEBOX_F407VG/debug/GCC_ARM/${workspaceFolderBasename}.elf",
+            "name": "debug stlink F407VG",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "stlink",
+            "runToMain": true,
+            "serialNumber": "004900313137510B33333639",
+            "breakAfterReset": false,
+            "serverArgs": [""],
             "v1": false
         }
      ]

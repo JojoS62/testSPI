@@ -7,6 +7,14 @@
             "device_has_remove": ["SLEEP"]
         },
         "DEVEBOX_H743VI": {
+            "device_has_remove": [
+                "SLEEP",             
+                "EMAC",
+                "USBDEVICE",
+                "LPTICKER"
+            ]
+        },
+        "DEVEBOX_F407VG": {
             "device_has_remove": ["SLEEP"]
         }
     }

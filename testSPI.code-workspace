@@ -10,5 +10,15 @@
 			"path": "..\\..\\mbed-os"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"*.cpp": "cpp",
+			"*.htm": "html",
+			"*.html": "html",
+			"*.tcc": "cpp",
+			"ostream": "cpp"
+		},
+		"cortex-debug.variableUseNaturalFormat": true,
+		"cortex-debug.registerUseNaturalFormat": false
+	}
 }

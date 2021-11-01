@@ -1,6 +1,6 @@
 {
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
-    "cmake.buildDirectory": "${workspaceFolder}/cmake_build/WEACT_F411CE/release/GCC_ARM",
+    "cmake.buildDirectory": "${workspaceFolder}/cmake_build/DEVEBOX_H743VI/debug/GCC_ARM",
     "cmake.configureOnOpen": false,
 	"clangd.checkUpdates": true,
 	"clangd.arguments": [
